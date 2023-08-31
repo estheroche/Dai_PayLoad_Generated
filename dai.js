@@ -6,6 +6,7 @@ const ERC20_ABI  = [
     "function totalSupply() view returns (uint256)",
     "function balanceOf(address) view returns (uint)",
 ]
+
 const address = '0x6B175474E89094C44Da98b954EedeAC495271d0F'
 const contract = new ethers.Contract(address, ERC20_ABI, provider);
 console.log(contract);
